@@ -1,0 +1,25 @@
+{
+    "name": "diamondscript",
+    "displayName": "Diamondscript",
+    "description": "Syntax highlighting for diamondscript files.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "diamondscript",
+            "aliases": ["Diamondscript", "diamondscript"],
+            "extensions": [".diamond"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "diamondscript",
+            "scopeName": "source.diamond",
+            "path": "./syntaxes/diamondscript.tmLanguage.json"
+        }]
+    }
+}

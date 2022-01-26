@@ -1,0 +1,51 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Diamondscript",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.diamondscript",
+				"begin": "#",
+				"end": "\\n"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.diamondscript",
+				"match": "[0-9]"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.diamondscript",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.diamondscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.diamondscript",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.diamond"
+}
