@@ -3,6 +3,10 @@
     "displayName": "Diamondscript",
     "description": "Syntax highlighting for diamondscript files.",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Racooder/diamondscript"
+    },
     "engines": {
         "vscode": "^1.63.0"
     },
